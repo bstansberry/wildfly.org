@@ -1,5 +1,7 @@
+@use "colors";
+
 .header-banner {
-  background-color: $red;
+  background-color: colors.$red;
   padding: 1.13rem;
   position: fixed;
   z-index: 2;

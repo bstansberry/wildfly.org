@@ -1,3 +1,6 @@
+@use "colors";
+@use "grid";
+
 .conference {
   .c-when-and-where {
     display: grid;
@@ -36,11 +39,11 @@
   }
 
   .c-session-gray {
-    background-color: $gray-2;
+    background-color: colors.$gray-2;
   }
 
   .c-session-blue {
-    background-color: $blue;
+    background-color: colors.$blue;
   }
 
   .c-time {
@@ -48,7 +51,7 @@
     flex-direction: row;
     grid-area: time;
 
-    @media (max-width: $breakpoint-m) {
+    @media (max-width: grid.$breakpoint-m) {
       flex-direction: column;
       margin-right: 2rem;
     }
@@ -60,7 +63,7 @@
     line-height: 2rem;
     opacity: 0.5;
 
-    @media (max-width: $breakpoint-m) {
+    @media (max-width: grid.$breakpoint-m) {
       font-size: 1.2rem;
       line-height: 1.5rem;
     }
@@ -72,7 +75,7 @@
       content: " - ";
     }
 
-    @media (max-width: $breakpoint-m) {
+    @media (max-width: grid.$breakpoint-m) {
       &:after {
         content: none;
         white-space: normal;
@@ -89,7 +92,7 @@
     padding: 0.25rem;
     text-wrap: balance;
 
-    @media (max-width: $breakpoint-m) {
+    @media (max-width: grid.$breakpoint-m) {
       font-size: 1rem;
       line-height: 1.2rem;
     }
@@ -101,7 +104,7 @@
     grid-area: title;
     line-height: 2rem;
 
-    @media (max-width: $breakpoint-m) {
+    @media (max-width: grid.$breakpoint-m) {
       font-size: 1.5rem;
     }
   }
@@ -128,7 +131,7 @@
     flex-direction: column;
     grid-area: avatar;
 
-    @media (max-width: $breakpoint-m) {
+    @media (max-width: grid.$breakpoint-m) {
       order: 1;
     }
   }

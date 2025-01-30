@@ -2,20 +2,20 @@
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
-@import "colors";
+@use "colors";
 @import url('https://fonts.googleapis.com/css?family=PT+Mono|Titillium+Web:200,400,700');
 
 html,
 body {
   font-size: 100%;
   font-weight: 100;
-  background-color: $dark-blue;
+  background-color: colors.$dark-blue;
 }
 
 body {
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
-  color: $white;
+  color: colors.$white;
   line-height: 1rem;
 }
 
@@ -53,7 +53,7 @@ div.content {
 }
 
 h1,h2,h3,h4,h5,h6,p {
-  color: $white;
+  color: colors.$white;
   margin: 2rem 0;
 }
 
@@ -102,7 +102,7 @@ p {
   line-height: 1.5rem;
   font-weight: 100;
   &.light {
-    color: $white;
+    color: colors.$white;
   }
 }
 
@@ -119,17 +119,17 @@ img.avatar {
 a {
   line-height: 1.5rem;
   font-weight: 400;
-  color: $yellow;
+  color: colors.$yellow;
   cursor: pointer;
-  strong { color: $yellow; }
-  &.light-background{ color: $teal; }
+  strong { color: colors.$yellow; }
+  &.light-background{ color: colors.$teal; }
 }
 
 a.button-cta {
   text-align: center;
-  color: $dark-blue;
-  background-color: $yellow;
-  border: 2px solid $yellow;
+  color: colors.$dark-blue;
+  background-color: colors.$yellow;
+  border: 2px solid colors.$yellow;
   text-transform: uppercase;
   text-decoration: none;
   margin: .5rem;
@@ -138,9 +138,9 @@ a.button-cta {
   line-height: 3.5;
   transition: background .2s ease-in 0s;
   &:hover, &:active, &:focus {
-    background-color: $dark-yellow;
-    border-color: $dark-yellow;
-    color: $yellow;
+    background-color: colors.$dark-yellow;
+    border-color: colors.$dark-yellow;
+    color: colors.$yellow;
   }
   @media screen and (max-width: 768px) {
     line-height: 1.5;
@@ -149,24 +149,24 @@ a.button-cta {
 
 a.button-cta.secondary {
   background: none;
-  border: 2px solid $yellow;
-  color: $yellow;
+  border: 2px solid colors.$yellow;
+  color: colors.$yellow;
   &:hover, &:active, &:focus {
-    background-color: $dark-yellow;
-    border-color: $dark-yellow;
-    color: $yellow;
+    background-color: colors.$dark-yellow;
+    border-color: colors.$dark-yellow;
+    color: colors.$yellow;
   }
 }
 
 .hljs {
-  color: $black;
-  background: $yellow;
+  color: colors.$black;
+  background: colors.$yellow;
 }
 
 code {
   font-family: "PT Mono",monospace;
-  background-color: $yellow;
-  color: $black;
+  background-color: colors.$yellow;
+  color: colors.$black;
   overflow: auto;
   padding: 0 2px;
   border-radius: 4px;
@@ -195,23 +195,23 @@ img { max-width: 100%; }
 }
 
 .sec-title-teal h2 {
-  background-color: $teal;
-  color: $white;
+  background-color: colors.$teal;
+  color: colors.$white;
   padding: 1rem;
 }
 .sec-title-yellow h2 {
-  background-color: $yellow;
-  color: $blue;
+  background-color: colors.$yellow;
+  color: colors.$blue;
   padding: 1rem;
 }
 .sec-title-red h2 {
-  background-color: $red;
-  color: $white;
+  background-color: colors.$red;
+  color: colors.$white;
   padding: 1rem;
 }
 .sec-title-bluw h2 {
-  background-color: $blue;
-  color: $white;
+  background-color: colors.$blue;
+  color: colors.$white;
   padding: 1rem;
 }
 
@@ -223,8 +223,8 @@ table {
   }
 
   thead th {
-    background-color: $teal;
-    color: $white;
+    background-color: colors.$teal;
+    color: colors.$white;
     padding: .5rem 1rem;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -233,7 +233,7 @@ table {
   }
   tbody tr {
     &:nth-child(even) {
-      background-color: $blue;
+      background-color: colors.$blue;
     }
     td p {
        margin: 0;
@@ -243,19 +243,19 @@ table {
 
 .admonitionblock.note, .note {
   tbody .icon {
-    background-color: $teal;
+    background-color: colors.$teal;
   }
   tbody .content {
-    background-color: $blue;
+    background-color: colors.$blue;
   }
 }
 
 .admonitionblock.warning, .warning {
   tbody .icon {
-    background-color: $orange;
+    background-color: colors.$orange;
   }
   tbody .content {
-    background-color: $blue;
+    background-color: colors.$blue;
   }
 }
 

@@ -2,8 +2,10 @@
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
+@use "colors";
+
 .project-footer {
-  background-color: $grey-4;
+  background-color: colors.$grey-4;
 
   .logo-wrapper {
     display: block;

@@ -2,6 +2,10 @@
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
+$baseurl: "{{ site.baseurl }}";
+
+@use "colors";
+
 .homepage {
   background-image: url($baseurl + '/assets/img/wildfly_hero_r3v1.jpg');
   background-repeat: no-repeat;
@@ -28,7 +32,7 @@
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    color: $white;
+    color: colors.$white;
     font-size: 1.5rem;
     margin: 1.5rem 2.5rem;
     &:before {
@@ -63,27 +67,27 @@
     display: block;
   }
   &.red {
-    background-color: $red;
-    strong { color: $yellow; }
+    background-color: colors.$red;
+    strong { color: colors.$yellow; }
   }
   &.yellow {
-    background-color: $yellow;
-    color: $dark-blue;
+    background-color: colors.$yellow;
+    color: colors.$dark-blue;
     h2 {
       margin-top: 1rem;
     }
     h2, p {
-      color: $dark-blue;
+      color: colors.$dark-blue;
     }
-    strong { color: $red; }
+    strong { color: colors.$red; }
   }
   &.teal {
-    background-color: $teal;
-    strong { color: $dark-blue; }
+    background-color: colors.$teal;
+    strong { color: colors.$dark-blue; }
   }
   &.orange {
-    background-color: $orange;
-    strong { color: $dark-blue; }
+    background-color: colors.$orange;
+    strong { color: colors.$dark-blue; }
   }
 }
 

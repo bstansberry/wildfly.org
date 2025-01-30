@@ -5,6 +5,9 @@
 // Navigation Variables
 $nav-breakpoint: 1024px;
 $nav-height: 70px;
+$content-width: 1000px;
+
+@use "colors";
 
 // Outer navigation wrapper
 .navigation {
@@ -36,9 +39,9 @@ nav {
         line-height: $nav-height;
         font-size: 1.5rem;
         text-decoration: none;
-        color: $white;
+        color: colors.$white;
         &.active {
-          color: $yellow;
+          color: colors.$yellow;
           font-weight: 700;
         }
       }
@@ -88,7 +91,7 @@ nav ul.nav-list {
     width: 16rem;
     padding-top: 0;
     .nav-list {
-      background-color: $yellow;
+      background-color: colors.$yellow;
       position: relative;
       left: 100px;
       top: -80px;
@@ -110,9 +113,9 @@ nav ul.nav-list {
         a:visited {
           padding: 15px;
           line-height: 20px;
-          color: $dark-blue;
+          color: colors.$dark-blue;
           &.active {
-            color: $dark-blue;
+            color: colors.$dark-blue;
             font-weight: 700;
           }
         }
@@ -139,7 +142,7 @@ nav ul.nav-list {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: $white;
+    background: colors.$white;
     position: absolute;
     display: block;
     content: '';

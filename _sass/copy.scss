@@ -1,13 +1,15 @@
+@use "colors";
+
 .btn-copy {
     background-color: transparent !important;
     border: transparent !important;
-    color: $yellow;
+    color: colors.$yellow;
     cursor: pointer;
     float: right;
 }
 
 .btn-copy:hover {
-    color: $orange !important;
+    color: colors.$orange !important;
 }
 
 /* Avoid different line-heights when the button is used */

@@ -1,5 +1,7 @@
+@use "colors";
+
 .redhat-footer {
-  background-color: $black;
+  background-color: colors.$black;
 
   .grid-wrapper { padding: .5rem 0; }
 
@@ -8,7 +10,7 @@
     align-self: center;
     justify-self: center;
     a {
-      color: $white;
+      color: colors.$white;
       font-size: .75rem;
       font-weight: 200;
     }

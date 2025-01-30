@@ -1,13 +1,15 @@
+@use "colors";
+
 .about-page {
   padding-bottom: 3rem;
   .page-subtitle {
-    color: $teal;
-    border-top: 2px solid $teal;
-    border-bottom: 2px solid $teal;
+    color: colors.$teal;
+    border-top: 2px solid colors.$teal;
+    border-bottom: 2px solid colors.$teal;
     padding: 2rem 0;
     margin: 4rem 0 0 0;
     strong {
-      color: $teal;
+      color: colors.$teal;
     }
   }
   .sec-title-teal,

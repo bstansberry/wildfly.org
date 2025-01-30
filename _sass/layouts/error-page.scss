@@ -1,13 +1,16 @@
+@use "colors";
+@use "grid";
+
 .error-page {
   text-align: center;
   padding: 5rem 0;
   height: 90vh;
-  @media screen and (max-width: $breakpoint-m) {
+  @media screen and (max-width: grid.$breakpoint-m) {
     height: auto;
   }
   .page-title {
     text-transform: uppercase;
-    color: $yellow;
+    color: colors.$yellow;
     font-weight: 600;
   }
   p {

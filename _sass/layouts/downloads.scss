@@ -2,6 +2,8 @@
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
+@use "colors";
+
 .wildfly-downloads {
   h1 {
     text-align: center;
@@ -27,35 +29,35 @@
     h4 {
       text-align: left;
       font-weight: 200;
-      color: $teal;
+      color: colors.$teal;
       a { font-weight: 200; }
-      strong { color: $teal; }
+      strong { color: colors.$teal; }
     }
     h5 {
       font-weight: 200;
-      color: $teal;
+      color: colors.$teal;
       a { font-weight: 200; }
-      strong { color: $teal; }
+      strong { color: colors.$teal; }
     }
   }
   .page-nightlies {
     text-align: center;
     h5 {
       font-weight: 200;
-      color: $teal;
+      color: colors.$teal;
       a { font-weight: 200; }
-      strong { color: $teal; }
+      strong { color: colors.$teal; }
     }
   }
 }
 
 .version-row {
-  background-color: $blue;
+  background-color: colors.$blue;
   margin: 3rem 0;
   padding: 1rem;
 
   &:first-of-type {
-    .version-name { border-bottom: 3px solid $white; }
+    .version-name { border-bottom: 3px solid colors.$white; }
   }
   .version-id {
     @media screen and (max-width: 1380px) {
@@ -116,12 +118,12 @@
     padding: 1px;
   }
   tbody tr:not(:first-of-type):not(:last-of-type) {
-    border-bottom: 1px solid $dark-blue;
+    border-bottom: 1px solid colors.$dark-blue;
   }
   .version-name {
     text-align: left;
     padding-bottom: .3rem;
-    border-bottom: 1px solid $teal;
+    border-bottom: 1px solid colors.$teal;
     font-weight: 400;
     &.final {
       font-weight: 700;

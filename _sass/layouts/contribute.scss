@@ -1,13 +1,15 @@
+@use "colors";
+
 .contribute-page {
   padding-bottom: 3rem;
   .page-subtitle {
-    color: $red;
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $red;
+    color: colors.$red;
+    border-top: 2px solid colors.$red;
+    border-bottom: 2px solid colors.$red;
     padding: 2rem 0;
     margin-top: 4rem;
     strong {
-      color: $red;
+      color: colors.$red;
     }
   }
   .contribute-item {
